@@ -8,20 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		1462E94D272C3AB500D7588D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1462E94C272C3AB500D7588D /* AppDelegate.m */; };
-		1462E950272C3AB500D7588D /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1462E94F272C3AB500D7588D /* SceneDelegate.m */; };
 		1462E953272C3AB500D7588D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1462E952272C3AB500D7588D /* ViewController.m */; };
 		1462E956272C3AB500D7588D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1462E954272C3AB500D7588D /* Main.storyboard */; };
 		1462E958272C3AB900D7588D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1462E957272C3AB900D7588D /* Assets.xcassets */; };
 		1462E95B272C3AB900D7588D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1462E959272C3AB900D7588D /* LaunchScreen.storyboard */; };
 		1462E95E272C3AB900D7588D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1462E95D272C3AB900D7588D /* main.m */; };
+		1462E969272C3B0E00D7588D /* CBReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 1462E966272C3B0E00D7588D /* CBReachability.m */; };
+		1462E96A272C3B0E00D7588D /* CinSocketAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 1462E968272C3B0E00D7588D /* CinSocketAddress.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1462E948272C3AB500D7588D /* network_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = network_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1462E94B272C3AB500D7588D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1462E94C272C3AB500D7588D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1462E94E272C3AB500D7588D /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		1462E94F272C3AB500D7588D /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		1462E951272C3AB500D7588D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		1462E952272C3AB500D7588D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1462E955272C3AB500D7588D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -29,6 +28,10 @@
 		1462E95A272C3AB900D7588D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1462E95C272C3AB900D7588D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1462E95D272C3AB900D7588D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1462E965272C3B0E00D7588D /* CinSocketAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CinSocketAddress.h; sourceTree = "<group>"; };
+		1462E966272C3B0E00D7588D /* CBReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBReachability.m; sourceTree = "<group>"; };
+		1462E967272C3B0E00D7588D /* CBReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBReachability.h; sourceTree = "<group>"; };
+		1462E968272C3B0E00D7588D /* CinSocketAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CinSocketAddress.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,10 +66,9 @@
 			children = (
 				1462E94B272C3AB500D7588D /* AppDelegate.h */,
 				1462E94C272C3AB500D7588D /* AppDelegate.m */,
-				1462E94E272C3AB500D7588D /* SceneDelegate.h */,
-				1462E94F272C3AB500D7588D /* SceneDelegate.m */,
 				1462E951272C3AB500D7588D /* ViewController.h */,
 				1462E952272C3AB500D7588D /* ViewController.m */,
+				1462E964272C3B0E00D7588D /* network */,
 				1462E954272C3AB500D7588D /* Main.storyboard */,
 				1462E957272C3AB900D7588D /* Assets.xcassets */,
 				1462E959272C3AB900D7588D /* LaunchScreen.storyboard */,
@@ -74,6 +76,17 @@
 				1462E95D272C3AB900D7588D /* main.m */,
 			);
 			path = network_test;
+			sourceTree = "<group>";
+		};
+		1462E964272C3B0E00D7588D /* network */ = {
+			isa = PBXGroup;
+			children = (
+				1462E967272C3B0E00D7588D /* CBReachability.h */,
+				1462E966272C3B0E00D7588D /* CBReachability.m */,
+				1462E965272C3B0E00D7588D /* CinSocketAddress.h */,
+				1462E968272C3B0E00D7588D /* CinSocketAddress.m */,
+			);
+			path = network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,9 +160,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1462E953272C3AB500D7588D /* ViewController.m in Sources */,
+				1462E969272C3B0E00D7588D /* CBReachability.m in Sources */,
 				1462E94D272C3AB500D7588D /* AppDelegate.m in Sources */,
+				1462E96A272C3B0E00D7588D /* CinSocketAddress.m in Sources */,
 				1462E95E272C3AB900D7588D /* main.m in Sources */,
-				1462E950272C3AB500D7588D /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
